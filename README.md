@@ -8,14 +8,14 @@ Project on Data Scientist Positions and their respective salaries
 
 
 ## Resources
-**Scraper Github:** https://github.com/arapfaik/scraping-glassdoor-selenium
-**Scraper Article:** https://towardsdatascience.com/selenium-tutorial-scraping-glassdoor-com-in-10-minutes-3d0915c6d905
-**Flask Productionization:** https://towardsdatascience.com/productionize-a-machine-learning-model-with-flask-and-heroku-8201260503d2
+**Scraper Github:** https://github.com/arapfaik/scraping-glassdoor-selenium  
+**Scraper Article:** https://towardsdatascience.com/selenium-tutorial-scraping-glassdoor-com-in-10-minutes-3d0915c6d905  
+**Flask Productionization:** https://towardsdatascience.com/productionize-a-machine-learning-model-with-flask-and-heroku-8201260503d2  
 
 
 ## Code uses:
-**Python Version:** 3.7
-**Packages:** pandas, numpy, sklearn, matplotlib, seaborn, selenium, flask, json, pickle
+**Python Version:** 3.7  
+**Packages:** pandas, numpy, sklearn, matplotlib, seaborn, selenium, flask, json, pickle  
 **For Web Framework Requirements:** pip install -r requirements.txt
 
 ## WEB Scraping:
@@ -49,3 +49,21 @@ After scraping the data I needed to clean it up for use in the model. Made the f
 * Created Columns for Seniority if it was listed in the Job Title
 
 ## Exploratory Data Analysis:
+
+## Model Building:
+Firstly, I transformed the categorial variables into dummies variables. Then I split the data into train and test sets with a test set of 30%.  
+I tried out three different models and evaluated their performance based on Mean Absolute Error. I chose MAE because of the ease of interpretation and since it stands up to outliers fairly well.  
+The models I used were:  
+**Lasso Regression** - Due to the sparse data for many categorical features, a normalized regression like Lasso should prove effective.  
+**Random Forest** - Due to the sparsity associated with the data, I expected a decent fit from this model as well.  
+**Gradient Boosting** - Gradient Boosting seemed like an effective choice for this data set as well.  
+
+## Model Performance:
+The Random Forest Model proved to be the most effective and outperformed the other approaches on both the training and validation sets:
+* Lasso Regression = 17.73  
+* **Random Forest = 10.58**  
+* Gradient Boosting = 14.61  
+
+## Productionization
+Here I built a Flask API endpoint that was hosted on a local server by folowing a tutorial referenced in the section above. The API endpoint takes a request with a list of values from a job listing and returns an estimated salary for those values based on the Random Forest Model noted above.
+
