@@ -48,6 +48,23 @@ After scraping the data I needed to clean it up for use in the model. Made the f
 * Created Columns for Seniority if it was listed in the Job Title
 
 ## Exploratory Data Analysis:
+### Here we can see the correlations between a few of the variables:  
+![alt text](https://github.com/Artemness/Data_Scientist_Jobs_Project/blob/master/heatmap.png "Correlations")  
+
+### The Top Locations Hiring are located in large metropolitan areas:  
+![alt text](https://github.com/Artemness/Data_Scientist_Jobs_Project/blob/master/TopLocationsHiring.png "Top Locations")  
+
+### The Top Companies Hiring are listed below:
+![alt text](https://github.com/Artemness/Data_Scientist_Jobs_Project/blob/master/Top20CompaniesHiring.png "Top Companies")  
+
+### The Top Sectors Hiring are listed below:
+![alt text](https://github.com/Artemness/Data_Scientist_Jobs_Project/blob/master/Sectors.png "Top Sectors")  
+* As expected IT is up near the top and greatly dominates the pool of jobs. However, of interest is that business services is ranked number two in terms of sectors. Of note Finance is ranked third and therefore a number of tasks are likely being accomplished in this field by Data Scientists.
+
+### Average Salaries broken out by Company Revenue:
+![alt text](https://github.com/Artemness/Data_Scientist_Jobs_Project/blob/master/CompanyRevenue.png "Company Revenues")  
+* If a paycheck is what you're looking for then a startup with under a million dollars in revenue is going to be your best bet, likely due to the instability surrounding job security. However, a close runner up with greater job security would be a massively large company with over $10 Billion in Revenue. Likely more challenging to gain a position in this kind of company and therefore the average salary is quite high.
+
 
 ## Model Building:
 Firstly, I transformed the categorial variables into dummies variables. Then I split the data into train and test sets with a test set of 30%.  
