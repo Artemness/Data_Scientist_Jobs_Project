@@ -1,0 +1,24 @@
+certifi==2020.6.20
+click==7.1.2
+Flask==1.1.2
+itsdangerous==1.1.0
+Jinja2==2.11.2
+joblib @ file:///tmp/build/80754af9/joblib_1594236160679/work
+MarkupSafe==1.1.1
+mkl-fft==1.1.0
+mkl-random==1.1.1
+mkl-service==2.3.0
+numpy==1.18.5
+pandas @ file:///tmp/build/80754af9/pandas_1592841632039/work
+plyer==1.4.3
+pyperclip==1.8.0
+PySimpleGUI==4.22.0
+pystray==0.16.0
+python-dateutil==2.8.1
+python-xlib==0.27
+pytz==2020.1
+scikit-learn @ file:///tmp/build/80754af9/scikit-learn_1592502882224/work
+scipy @ file:///tmp/build/80754af9/scipy_1592930510235/work
+six==1.15.0
+threadpoolctl @ file:///tmp/tmp9twdgx9k/threadpoolctl-2.1.0-py3-none-any.whl
+Werkzeug==1.0.1
