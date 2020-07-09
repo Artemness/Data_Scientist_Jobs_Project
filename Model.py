@@ -106,5 +106,4 @@ with open(file_name, 'rb') as pickled:
     model = data['model']
 
 #print(model.predict(X_test.iloc[1,:].values.reshape(1,-1)))
-
-print(list(X_test.iloc[1,:]))
+#print(list(X_test.iloc[1,:]))
