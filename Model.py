@@ -94,3 +94,17 @@ print(mean_absolute_error(y_test, t_pred_grad_forest))
 print('\n')
 print('85% Forest and 15% Gradient Forest Test Score:')
 print(mean_absolute_error(y_test, (tpred_forest*.85+ t_pred_grad_forest*.15)))
+
+import pickle
+pickl ={'model': forest}
+pickle.dump( pickl, open( 'model_file' + ".p", "wb") )
+
+file_name = 'model_file.p'
+
+with open(file_name, 'rb') as pickled:
+    data = pickle.load(pickled)
+    model = data['model']
+
+#print(model.predict(X_test.iloc[1,:].values.reshape(1,-1)))
+
+print(list(X_test.iloc[1,:]))
