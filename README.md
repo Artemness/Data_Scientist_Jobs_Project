@@ -1,6 +1,5 @@
 # Data_Scientist_Jobs_Project
-Project on Data Scientist Positions and their respective salaries
-### Created a Project to estimate salaries on Data Scientist Jobs to help understand the workspace landscape
+### Created a Project to estimate salaries (MAE around $11K) on Data Scientist Jobs to help understand the workspace landscape
 * Scraped about 1000 jobs from Glassdoor utilizing selenium and python
 * Created features from the job description to help understand the value companies place on python and excel
 * Optimized Lasso, Random Forest and Gradient Boosting Regressor using GridsSearch CV
