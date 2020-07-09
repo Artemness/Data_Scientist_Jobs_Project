@@ -1,3 +1,8 @@
+'''
+Created July 9th 2020:
+author: Artem Moshkin
+'''
+
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
