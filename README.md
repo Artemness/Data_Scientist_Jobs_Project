@@ -15,6 +15,38 @@ Flask Productionization: https://towardsdatascience.com/productionize-a-machine-
 
 
 ## Code uses:
-**Python Version: 3.7**
+**Python Version:** 3.7
 **Packages:** pandas, numpy, sklearn, matplotlib, seaborn, selenium, flask, json, pickle
 **For Web Framework Requirements:** pip install -r requirements.txt
+
+## WEB Scraping:
+Edited the webscraper from the github repository listed aboce to scrape 1000 jobs from Glassdoor.com. With each job recieved the following data:
+* Job Title
+* Salary Estimate
+* Job Description
+* Rating
+* Company Name
+* Location
+* Headquarters
+* Size
+* Founded
+* Type of ownership
+* Industry
+* Sector
+* Revenue
+* Competitors
+
+## Data Cleaning:
+After scraping the data I needed to clean it up for use in the model. Made the following changes:
+* Parsed numeric data out of salary
+* Created columns for hourly wages and employer provided salary
+* Parsed rating out of company name
+* Changed foundation date into age of company
+** Created columns if the following skills were in the job description:
+    * Python
+    * R
+    * Excel
+* Created Column for Simplified Job Title
+* Created Columns for Seniority if it was listed in the Job Title
+
+## Exploratory Data Analysis:
