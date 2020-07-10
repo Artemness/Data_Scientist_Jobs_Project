@@ -67,7 +67,7 @@ After scraping the data I needed to clean it up for use in the model. Made the f
 
 
 ## Model Building:
-Firstly, I transformed the categorial variables into dummies variables. Then I split the data into train and test sets with a test set of 30%.  
+Firstly, I transformed the categorial variables into dummy variables. Then I split the data into train and test sets with a test set of 30%.  
 I tried out three different models and evaluated their performance based on Mean Absolute Error. I chose MAE because of the ease of interpretation and since it stands up to outliers fairly well.  
 The models I used were:  
 **Lasso Regression** - Due to the sparse data for many categorical features, a normalized regression like Lasso should prove effective.  
