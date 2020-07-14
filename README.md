@@ -18,7 +18,7 @@
 **For Web Framework Requirements:** pip install -r requirements.txt
 
 ## WEB Scraping:
-Edited the webscraper from the github repository listed aboce to scrape 1000 jobs from Glassdoor.com. With each job recieved the following data:
+Edited the webscraper from the github repository listed above to scrape 1000 jobs from Glassdoor.com. With each job recieved the following data:
 * Job Title
 * Salary Estimate
 * Job Description
